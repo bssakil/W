@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Storage API</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Web Storage API</h1>
+
+        <div class="subtitle">
+            <span class="local">LocalStorage</span>
+            VS
+            <span class="session">SessionStorage</span>
+        </div>
+
+        <table>
+            <tr>
+                <th class="featureHeder">Feature</th>
+                <th class="localHeder">LocalStorage</th>
+                <th class="sessionHeder">SessionStorage</th>
+            </tr>
+            <tr>
+                <td>Scope</td>
+                <td>Shared All Tabs/Windows Same Origin</td>
+                <td>Limited Specific Tabs/Windows Same Origin</td>
+            </tr>
+            <tr>
+                <td>Data Persistence</td>
+                <td>Long-Term</td>
+                <td>Session-Only (Temporary)</td>
+            </tr>
+            <tr>
+                <td>Accessibility</td>
+                <td>Accessible Form All Tabs/Windows</td>
+                <td>Accessible Only Same Tabs/Windows</td>
+            </tr>
+            <tr>
+                <td>Storage Limit</td>
+                <td> -5MB to 10MB</td>
+                <td> -5MB to 10MB</td>
+            </tr>
+            <tr>
+                <td>Use Case</td>
+                <td>Themes,Long-Term Data etc.</td>
+                <td>Inputs,Session-Specific Info etc.</td>
+            </tr>
+            <tr>
+                <td>Example</td>
+                <td>
+                    <code class="localCode">
+                        localStorage.setItem("key","value");<br>
+                        localStorage.getItem("key");
+                    </code>
+                </td>
+                <td>
+                    <code class="sessionCode">
+                        sessionStorage.setItem("key","value");<br>
+                        sessionStorage.getItem("key");
+                    </code>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+    <script src="./local_storage.js"></script>
+    <script src="./session_storage.js"></script>
+</body>
+</html>

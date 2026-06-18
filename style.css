@@ -1,0 +1,69 @@
+body{
+    font-family: Arial, sans-serif;
+    background: whitesmoke;
+    padding: 30px;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.subtitle{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.local{
+    color: green;
+}
+
+.session{
+    color: greenyellow;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+}
+
+th,td{
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th{
+    color: green;
+    font-size: 20px;
+}
+
+.featureHeder{
+    background: black;
+}
+.localHeder{
+    background: black;
+}
+.sessionHeder{
+    background: black;
+}
+
+.localCode{
+    color: blue;
+    font-size: 15px;
+}
+
+.sessionCode{
+    color: blue;
+    font-size: 15px;
+}
